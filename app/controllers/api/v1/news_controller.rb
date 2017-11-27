@@ -1,7 +1,7 @@
 require 'rest-client'
 class Api::V1::NewsController < ApplicationController
   
-  def index
+  def create
     byebug
     queryParams = ENV["apikey"]
     url = "https://newsapi.org/v2/top-headlines?sources=buzzfeed" + queryParams
